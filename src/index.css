@@ -1,0 +1,156 @@
+body {
+  font-family: 'Josefin Sans';
+  background-color: #FFFAFB;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.home{
+  background: rgb(235, 234, 234);
+  max-width: 100vw;
+}
+
+.header{
+  width: 100vw;
+  min-height: 60vh;
+  background: linear-gradient(to right,rgb(94, 94, 235),rgb(240, 183, 240) );
+}
+
+/* media queries */
+.mobile-nav-menu{
+   display: none;
+}
+
+.hembeger-menu{
+  display:none;
+}
+
+@media (max-width:600px){
+  .nav-menu{
+    display:none;
+    
+  }
+  .mobile-nav-item{
+    list-style-type: none;
+    color: rgb(230, 229, 229);
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .mobile-nav-item:hover{
+    border-bottom: 3px solid white;
+ }
+   .nav-item{
+     display: none;
+   }
+  .yellow-button{
+    display: none;
+    
+  }
+
+  .mobile-nav-menu{
+    display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 5px;
+      right: 50px;
+      gap: 2rem;
+      z-index: 1;
+      transition: 1s;
+      background: hsla(0, 0%, 100%, 0.225);
+      padding: 3px 10px;
+      border-radius: 10px;
+      backdrop-filter: blur(75%);
+  }
+
+  .hembeger-menu{
+    display:inline-flex;
+    transition: 0.5s;
+    border: 0.5px solid rgb(252, 185, 3);
+  }
+  .hembeger-menu:hover{
+    background-color: rgb(238, 232, 232);
+    border: none;
+    cursor: pointer;
+  }
+
+}
+
+
+
+
+@media (max-width:950px){
+  .hero-section{
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .hero-left h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .programs{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .programCard{
+    width:100px;
+    padding: 0 10px;
+  }
+  .programCard h5{
+    font-weight: 400;
+
+  }
+ 
+  .values-section-left{
+    display: none;
+  }
+
+ 
+  .menu-section-main{
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-section-left{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .testimonials-section-left{
+    display: none;
+  }
+
+}
+
+@media (max-width:700px){
+  .menu-section-right{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
